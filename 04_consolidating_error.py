@@ -56,6 +56,7 @@ def validation_exception_handler(request: Request, exc: ValidationError):
             "code": error['type'] # Include Pydantic's error type for programmatic handling
         })
 
+    
     return JSONResponse(
         status_code=422,
         content={
