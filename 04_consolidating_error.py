@@ -34,6 +34,7 @@ def validation_exception_handler(request: Request, exc: ValidationError):
         message = f"Error in field '{field_location}': {error['msg']}"
         
         # Refined mapping for common Pydantic errors
+       
         if error['type'] == 'value_error.number.gt':
             message = f"Field '{field_location}' must be a positive number."
         elif error['type'] == 'value_error.any_str.min_length':
