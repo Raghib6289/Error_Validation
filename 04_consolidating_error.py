@@ -15,7 +15,7 @@ from typing import List, Optional
 
 app = FastAPI()
 
-# --- Pydantic Models ---
+# --- Pydantic Models  ---
 
 class UserProfile(BaseModel):
     user_id: int = Field(..., gt=0)
