@@ -14,8 +14,7 @@
 
 # Handling ValidationError Globally:
 
-# The most common use case for global exception handlers in the context of Pydantic valid
-ation is to override FastAPI's default handling of ValidationError. This allows you to standardize the error response format for all validation failures, even if they originate from different parts of your application or involve different Pydantic models.
+# The most common use case for global exception handlers in the context of Pydantic validation is to override FastAPI's default handling of ValidationError. This allows you to standardize the error response format for all validation failures, even if they originate from different parts of your application or involve different Pydantic models.
 
 # Hands-on Component 2: Implement a Custom Exception Handler for Validation Errors
 
