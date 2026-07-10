@@ -1,4 +1,4 @@
-1. Use Standard HTTP Status Codes Appropriately:
+ Use Standard HTTP Status Codes Appropriately:
 HTTP status codes are a standardized way to communicate the outcome of a request. Using them correctly is fundamental.
 
 400 Bad Request: Use this when the request itself is malformed or invalid due to client-side errors that do not fit other 4xx codes. This can include syntax errors in the request body or invalid query parameters that are not strictly validation errors handled by Pydantic.
