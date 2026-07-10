@@ -3,6 +3,7 @@
 HTTP status codes are a standardized way to communicate the outcome of a request. Using them correctly is fundamental.
 
 400 Bad Request: Use this when the request itself is malformed or invalid due to client-side errors that do not fit other 4xx codes. This can include syntax errors in the request body or invalid query parameters that are not strictly validation errors handled by Pydantic.
+
 422 Unprocessable Entity: This is the standard for Pydantic validation errors in FastAPI. It signifies that the request was syntactically correct but semantically incorrect due to validation failures.
 401 Unauthorized: Use when authentication is required but has failed or was not provided.
 403 Forbidden: Use when the user is authenticated but does not have permission to perform the requested action.
