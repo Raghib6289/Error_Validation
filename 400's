@@ -7,6 +7,7 @@ HTTP status codes are a standardized way to communicate the outcome of a request
 422 Unprocessable Entity: This is the standard for Pydantic validation errors in FastAPI. It signifies that the request was syntactically correct but semantically incorrect due to validation failures.
 
 401 Unauthorized: Use when authentication is required but has failed or was not provided.
+
 403 Forbidden: Use when the user is authenticated but does not have permission to perform the requested action.
 404 Not Found: Use when the requested resource does not exist (e.g., trying to access a user with an ID that does not exist).
 409 Conflict: Use when the request cannot be completed due to a conflict with the current state of the resource (e.g., trying to create a user with an email that already exists).
